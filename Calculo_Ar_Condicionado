@@ -17,7 +17,8 @@ int main()
   pessoas *= 600;
   pcs *= 600;
   total = area + pessoas + pcs;
-  printf ("Voce ira precisar de um AC de "%d, total);
+  printf ("Voce ira precisar de um AC de %dBTUs", total);
+  
   return 0;
 }
 
