@@ -23,6 +23,32 @@ int main()
 }
 
 
+/* Pode ser usado o programa a seguir caso precise de float */
+
+#include <stdio.h>
+
+int main()
+{
+  float area = 0;
+  float pessoas = 0;
+  float pcs = 0;
+  float total = 0;
+  
+  printf ("Informe a area da sala em m2: ");
+  scanf ("%f", &area);
+  printf ("Informe a capacidade da sala: ");
+  scanf ("%f", &pessoas);
+  printf ("Informe o numero de computadores: ");
+  scanf ("%f", &pcs);
+  area *= 600;
+  pessoas *= 600;
+  pcs *= 600;
+  total = area + pessoas + pcs;
+  printf ("Voce ira precisar de um AC de %.2fBTUs", total);
+  
+  return 0;
+}
+
 
 /* Programa para calcular a potência de um ar condicionado
    Usuário irá informar os m2, numero de pessoas e numero
