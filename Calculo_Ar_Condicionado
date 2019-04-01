@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+  int area = 0;
+  int pessoas = 0;
+  int pcs = 0;
+  int total = 0;
+  
+  printf ("Informe a area da sala em m2: ");
+  scanf ("%d", &area);
+  printf ("Informe a capacidade da sala: ");
+  scanf ("%d", &pessoas);
+  printf ("Informe o numero de computadores: ");
+  scanf ("%d", &pcs);
+  area *= 600;
+  pessoas *= 600;
+  pcs *= 600;
+  total = area + pessoas + pcs;
+  printf ("Voce ira precisar de um AC de "%d, total);
+  return 0;
+}
+
+
+
+/* Programa para calcular a potência de um ar condicionado
+   Usuário irá informar os m2, numero de pessoas e numero
+   de computadores. */
