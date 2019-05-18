@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-int num = 0;
-int mostra = 0;
-
 int fatorial(int valor)
 {
 	int v1 = 1;
@@ -16,9 +13,11 @@ int fatorial(int valor)
 
 int main()
 {
+	int num = 0;
+	int mostra = 0;
 	printf("Digite o numero que deseja saber o fatorial: ");
-	scanf("%i", &num);
+	scanf("%d", &num);
 	mostra = fatorial(num);
-	printf("O fatorial do seu numero e: %i", mostra);
+	printf("O fatorial do seu numero e: %d", mostra);
 	return 0;	
 }
